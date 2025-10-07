@@ -1,0 +1,732 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*=====mobile device======*/
+h1 {
+  font-family: "roboto" sans-serif;
+  font-size: 24px;
+  color: black;
+  font-weight: 700;
+  line-height: 28px;
+  color: #000;
+  margin: 0px;
+  padding: 39px 50px 0px 50px;
+}
+
+h2 {
+  font-family: "roboto";
+  font-size: 24px;
+  color: black;
+  font-weight: 700;
+  margin: 0px;
+  padding: 0px 0px 26px 20px;
+}
+
+body {
+  background-color: #eaeaea;
+  margin: 0px;
+  padding: 0px;
+}
+
+head {
+  display: none;
+}
+
+/*================Header===============*/
+.loader {
+  position: absolute;
+  background-color: #353535;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  z-index: 100;
+  opacity: 0;
+  animation-name: anim-loader;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+.loader_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.loader_title {
+  font-family: Shrikhand;
+  font-size: 70px;
+  font-weight: 400;
+  color: white;
+}
+
+.loader_anim {
+  width: 80px;
+  height: 80px;
+  border: 15px solid #FF79DA;
+  border-bottom-color: #9356DC;
+  border-radius: 50%;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+
+.top-bar {
+  position: relative;
+  background-color: white;
+  width: 100%;
+  height: 63px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 38, 0.15);
+}
+
+.top-bar_img {
+  display: block;
+  height: 30px;
+  width: 162px;
+}
+
+/*================Section banniére============*/
+.location {
+  width: 100%;
+  height: 50px;
+  background-color: #eaeaea;
+  display: flex;
+  gap: 17px;
+  justify-content: center;
+  align-items: center;
+}
+
+.location i {
+  color: #353535;
+}
+
+.fa-solid {
+  font-weight: 900;
+  font-family: "Font Awesome 6 Free";
+}
+
+.location_input {
+  padding: 0px;
+  width: 110px;
+  height: 100%;
+  border: none;
+  background-color: transparent;
+  font-family: "roboto";
+  font-size: 16px;
+  color: #353535;
+}
+
+.reservation {
+  background-color: #f6f6f6;
+  padding-bottom: 57px;
+  text-align: center;
+}
+
+h1 {
+  font-family: "roboto", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0px;
+  padding: 39px 50px 0px 50px;
+  color: #000;
+}
+
+.reservation p {
+  font-family: "roboto", sans-serif;
+  font-size: 16px;
+  color: #353535;
+  font-weight: 300;
+  padding: 0px 30px 29px 30px;
+  margin: 0px;
+}
+
+.reservation .btn {
+  margin-top: 27px;
+}
+
+.btn {
+  width: 218px;
+  height: 50px;
+  border-radius: 25px;
+  border: none;
+  background: linear-gradient(#FF79DA, #9356DC);
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  color: white;
+  font-weight: 500;
+  display: block;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 1;
+}
+
+.btn::after {
+  content: "";
+  border-radius: 25px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
+  opacity: 0;
+  z-index: -1;
+  transition: opacity 300ms;
+}
+
+/*=================Section Fonctionnement===========*/
+.fonctionnement {
+  background-color: white;
+  padding: 48px 0px 60px 0px;
+}
+
+h2 {
+  font-family: "roboto", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  padding: 0px 0px 26px 20px;
+  color: #000;
+  margin: 0px;
+}
+
+.fonctionnement .container-fonc {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  gap: 25px;
+  padding: 0px 20px 0px 20px;
+}
+
+.fonctionnement .choice {
+  position: relative;
+  padding-left: 12px;
+  width: 95%;
+}
+
+.fonctionnement .choice_number {
+  display: inline-block;
+  margin: 0px;
+  position: absolute;
+  left: 0px;
+  top: 24px;
+  background-color: #9356DC;
+  height: 24px;
+  width: 24px;
+  line-height: 26px;
+  text-align: center;
+  border-radius: 24px;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  color: #f6f6f6;
+  font-weight: 500;
+}
+
+.fonctionnement .choice_bloc {
+  height: 72px;
+  background-color: #f6f6f6;
+  border-radius: 20px;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+  padding-left: 33px;
+  display: flex;
+  align-items: center;
+  gap: 27px;
+}
+
+.fonctionnement .choice_bloc--grey {
+  color: #7e7e7e;
+}
+
+.fonctionnement .choice_bloc--purple {
+  color: #9356DC;
+}
+
+.fonctionnement .choice_bloc p {
+  margin: 0px;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  color: black;
+  font-weight: 500;
+}
+
+/*=================Section Restaurants==============*/
+.restaurant {
+  padding: 54px 0px 66px 0px;
+  width: 100%;
+}
+
+.restaurant .rest-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+}
+
+.restaurant .rest-container_link {
+  display: block;
+  width: 90%;
+  height: 251px;
+  background-color: white;
+  border-radius: 15px;
+  overflow: hidden;
+  position: relative;
+  text-decoration: none;
+}
+
+.restaurant .rest-container_tag {
+  border-radius: 3px;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background-color: #99e2d0;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  color: #008766;
+  font-weight: 500;
+  padding: 7px 9px 7px 9px;
+}
+
+.restaurant .rest-container_img {
+  width: 100%;
+  height: 174px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.restaurant .rest-container_text {
+  display: flex;
+  height: 72px;
+  padding: 0px 25px 0px 13px;
+  font-family: "Roboto";
+  font-size: 17px;
+  color: black;
+  font-weight: 300;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.heart-bloc {
+  width: 22px;
+  height: 22px;
+  font-size: 22px;
+  position: relative;
+  cursor: pointer;
+}
+
+.heart-bloc .heart {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+.fa-regular {
+  font-weight: 400;
+}
+
+.heart-bloc .heart-gradient {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  opacity: 0;
+  background: linear-gradient(#9356DC, #FF79DA);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+}
+
+/*==================Footer==================*/
+footer {
+  display: flex;
+  flex-flow: column;
+  gap: 16px;
+  padding: 25px 22px 22px 25px;
+  background: #353535;
+}
+
+footer ul {
+  display: flex;
+  justify-content: flex-start;
+  flex-flow: column;
+  gap: 7px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+footer ul li {
+  display: flex;
+  align-items: baseline;
+  gap: 17px;
+  font-family: "roboto";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18px;
+  color: #FFFFFF;
+  list-style: none;
+}
+
+footer a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+/*======Menu des restaurants=====*/
+/*la palette des gouts*/
+/*la note enchantée*/
+.top-bar {
+  position: relative;
+  background-color: white;
+  width: 100%;
+  height: 63px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+}
+
+.top-bar a {
+  position: absolute;
+  left: 17px;
+  color: #353535;
+  padding: 5px;
+  font-size: 20px;
+}
+
+.fa-solid, .fas {
+  font-weight: 900;
+}
+
+.top-bar_img {
+  display: block;
+  height: 30px;
+  width: 162px;
+}
+
+.image {
+  width: 100%;
+  height: 275px;
+}
+
+.image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.menu-container {
+  background-color: #f6f6f6;
+  min-height: 300px;
+  border-radius: 25px 25px 0px 0px;
+  padding: 32px 13px 40px 13px;
+  margin-top: -25px;
+  position: relative;
+  overflow: hidden;
+}
+
+.menu-container_title {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.heart-bloc {
+  width: 22px;
+  height: 22px;
+  font-size: 22px;
+  position: relative;
+  cursor: pointer;
+}
+
+.heart-bloc .heart {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+.heart-bloc:not(:focus) .heart-gradient {
+  transition: opacity 500ms;
+}
+
+.heart-bloc .heart-gradient {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  opacity: 0;
+  background: linear-gradient(#9356DC, #FF79DA);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.menu {
+  margin-top: 40px;
+}
+
+.menu-container h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  color: black;
+  font-weight: 300;
+  margin: 0px;
+  padding: 0px;
+}
+
+.title-bar {
+  display: block;
+  background-color: #99E2D0;
+  margin-top: 4px;
+  width: 40px;
+  height: 3px;
+}
+
+.anim--1 {
+  animation-delay: 200ms;
+  animation-name: card-anim;
+  animation-duration: 600ms;
+  animation-fill-mode: forwards;
+}
+
+.card_text {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  flex: 1;
+  padding-left: 15px;
+}
+
+.card_text h3 {
+  font-family: "Roboto";
+  font-size: 18px;
+  color: black;
+  padding-bottom: 5px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  margin: 0px;
+  padding: 0px;
+}
+
+.card_text p {
+  font-family: "Roboto";
+  font-size: 15px;
+  color: black;
+  font-weight: 300;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  margin: 0px;
+  padding: 0px;
+}
+
+.card_price {
+  padding-right: 15px;
+  padding-top: 25px;
+  padding-left: 10px;
+  font-family: "Roboto";
+  font-size: 15px;
+  color: black;
+  font-weight: 700;
+}
+
+p {
+  margin: 0px;
+}
+
+.card_valid {
+  position: relative;
+  height: 69px;
+  width: 0px;
+  line-height: 69px;
+  color: white;
+  font-size: 22px;
+  border-radius: 0px 15px 15px 0px;
+  transition: width 300ms;
+  background-color: #99E2D0;
+}
+
+.card_valid i {
+  margin-left: 18.5px;
+}
+
+.anim--2 {
+  animation-delay: 400ms;
+  animation-name: card-anim;
+  animation-duration: 600ms;
+  animation-fill-mode: forwards;
+}
+
+.card {
+  height: 69px;
+  margin-top: 12px;
+  background-color: white;
+  border-radius: 15px;
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+  align-items: center;
+  box-shadow: 0px 4.011px 15.043px 0px rgba(0, 0, 0, 0.1);
+  animation-name: card-hide;
+  animation-fill-mode: forwards;
+}
+
+.anim--3 {
+  animation-delay: 600ms;
+  animation-name: card-anim;
+  animation-duration: 600ms;
+  animation-fill-mode: forwards;
+}
+
+.anim--4 {
+  animation-delay: 800ms;
+  animation-name: card-anim;
+  animation-duration: 600ms;
+  animation-fill-mode: forwards;
+}
+
+.anim--5 {
+  animation-delay: 1000ms;
+  animation-name: card-anim;
+  animation-duration: 600ms;
+  animation-fill-mode: forwards;
+}
+
+.anim--6 {
+  animation-delay: 1200ms;
+  animation-name: card-anim;
+  animation-duration: 600ms;
+  animation-fill-mode: forwards;
+}
+
+.btn {
+  margin-top: 40px;
+}
+
+.btn {
+  width: 218px;
+  height: 50px;
+  border-radius: 25px;
+  border: none;
+  background: linear-gradient(#FF79DA, #9356DC);
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  color: white;
+  font-weight: 500;
+  display: block;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 1;
+}
+
+footer {
+  background-color: #353535;
+  padding: 22px 25px 22px 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+footer .footer_logo {
+  font-family: Shrikhand;
+  font-size: 18px;
+  font-weight: 400;
+  color: white;
+}
+
+footer .footer_container {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  color: white;
+  font-weight: 400;
+}
+
+footer .footer_container .icon-text {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+}
+
+/*a la française*/
+/*le delice des sens*/
+/*@media (min-width: 1024px)*/
+/* devices (desktop, more than 1024px) */
+@media (min-width: 1024px) {
+  /* ... */
+  .top-bar {
+    height: 96px;
+  }
+  .reservation {
+    padding-bottom: 30px;
+  }
+  h1 {
+    padding: 30px 0px 18px 0px;
+    font-size: 40px;
+  }
+  .reservation p {
+    padding: 0px 0px 18px 0px;
+    line-height: 46px;
+  }
+  .fonctionnement {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .content {
+    max-width: 1080px;
+    margin: auto;
+  }
+  h2 {
+    font-family: "Roboto", sans-serif;
+    font-size: 24px;
+    color: black;
+    font-weight: 700;
+    padding: 0px 0px 28px 0px;
+  }
+  .fonctionnement .container-fonc {
+    flex-direction: row;
+  }
+  .restaurant {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    width: auto;
+  }
+  .restaurant .rest-container {
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 50px;
+    -moz-column-gap: 100px;
+         column-gap: 100px;
+  }
+  .restaurant .rest-container_link {
+    width: 45%;
+  }
+  footer {
+    padding: 60px 60px 30px 25px;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 90px;
+  }
+  footer ul {
+    flex-direction: row;
+    gap: 20px;
+  }
+}/*# sourceMappingURL=style.css.map */
