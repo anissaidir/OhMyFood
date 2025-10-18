@@ -433,8 +433,6 @@ footer a {
 }
 
 /*======Menu des restaurants=====*/
-/*la palette des gouts*/
-/*la note enchantée*/
 .top-bar {
   position: relative;
   background-color: white;
@@ -775,6 +773,7 @@ footer .footer_container .icon-text {
     padding-top: 51px;
     padding-left: 210px;
     padding-right: 210px;
+    box-sizing: content-box;
   }
   .menu-container_title {
     justify-content: center;
