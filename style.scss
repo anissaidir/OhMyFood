@@ -730,7 +730,10 @@ footer{
     align-items: center;
     gap: 90px;
 }
-
+footer .footer_container{
+    flex-direction: row;
+    gap: 20px;
+}
 
 
 @keyframes rotation{

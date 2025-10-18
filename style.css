@@ -784,6 +784,10 @@ footer .footer_container .icon-text {
     align-items: center;
     gap: 90px;
   }
+  footer .footer_container {
+    flex-direction: row;
+    gap: 20px;
+  }
   @keyframes rotation {
     0% {
       transform: rotate(0deg);
