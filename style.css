@@ -698,8 +698,6 @@ footer .footer_container .icon-text {
   gap: 11px;
 }
 
-/*a la française*/
-/*le delice des sens*/
 /*@media (min-width: 1024px)*/
 /* devices (desktop, more than 1024px) */
 @media (min-width: 1024px) {
@@ -763,6 +761,29 @@ footer .footer_container .icon-text {
   footer ul {
     flex-direction: row;
     gap: 20px;
+  }
+  .top-bar {
+    height: 96px;
+  }
+  .image {
+    height: 383px;
+  }
+  .menu-container {
+    max-width: 635px;
+    margin: auto;
+    margin-top: -28px;
+    padding-top: 51px;
+    padding-left: 210px;
+    padding-right: 210px;
+  }
+  .menu-container_title {
+    justify-content: center;
+  }
+  footer {
+    padding: 60px 60px 30px 25px;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 90px;
   }
   @keyframes rotation {
     0% {

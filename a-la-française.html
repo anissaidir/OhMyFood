@@ -1,49 +1,181 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>OhMyFood - Menu a-la-française</title>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="OhMyFood est l'application numéro 1 pour choisir votre restaurant préféré ! Alors n'attendez plus et commander chez nous !">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&amp;family=Shrikhand&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer">  
+    <link rel="stylesheet" href="../mon-nouveau-projet/style.css">
 </head>
 <body>
-    <body>
-<header class="header">
-    <a href="index.html" class="header__back">← Accueil</a>
-   <h1>À la Française</h1>
-</header>
-
-<main class="menu">
-<section class="menu__category">
-    <h2>Entrées</h2>
-    <ul>
-      <li><span>Soupe à la truffe noire</span><span>25€</span></li>
-      <li><span>Carpaccio de Saint-Jacques</span><span>32€</span></li>
-      <li><span>Salade niçoise revisitée</span><span>18€</span></li>
-    </ul>
-</section>
-
-<section class="menu__category">
-    <h2>Plats</h2>
-    <ul>
-      <li><span>Coq au vin</span><span>34€</span></li>
-      <li><span>Bœuf bourguignon</span><span>38€</span></li>
-      <li><span>Blanquette de veau</span><span>36€</span></li>
-    </ul>
-</section>
-
-<section class="menu__category">
-    <h2>Desserts</h2>
-    <ul>
-      <li><span>Crêpe Suzette</span><span>18€</span></li>
-      <li><span>Tarte Tatin</span><span>16€</span></li>
-     <li><span>Profiteroles au chocolat</span><span>20€</span></li>
-    </ul>
-</section>
-</main>
-
-<footer class="footer">
-    <p>© 2025 Oh My Food</p>
-</footer>
+    <header class="top-bar">
+        <a href="index.html"><i class="fa-solid fa-arrow-left" aria-hidden="true"></i></a>
+        <img class="top-bar_img" src="logo/ohmyfood.png" alt="Logo OhMyFood">
+    </header>
+    <main>
+        <div class="image">
+            <img src="logo/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="Photo d'un plat du restaurant à la française">
+        </div>
+        <section class="menu-container">
+            <div class="menu-container_title">
+                <h1>À la française</h1>
+                <div class="heart-bloc">
+                    <i class="fa-regular fa-heart heart" aria-hidden="true"></i>
+                    <i class="fa-solid fa-heart heart-gradient" aria-hidden="true"></i>
+                </div>
+            </div>
+            <div class="menu">
+                <h2>ENTRÉES</h2>
+                <span class="title-bar"></span>
+                <article class="card anim--1">
+                    <div class="card_text">
+                        <h3>Tartare de poulpe acidulé</h3>
+                        <p>Aux zestes d'orange</p>
+                    </div>
+                    <div class="card_price">
+                        <p>25€</p>
+                    </div>
+                    <div class="card_valid">
+                        <i class="fa-solid fa-circle-check" aria-hidden="true"></i>
+                    </div>
+                </article>
+                <article class="card anim--2">
+                    <div class="card_text">
+                        <h3>Velouté de légumes d'antan</h3>
+                        <p>Carotte, panais, topinambour</p>
+                    </div>
+                    <div class="card_price">
+                        <p>35€</p>
+                    </div>
+                    <div class="card_valid">
+                        <i class="fa-solid fa-circle-check" aria-hidden="true"></i>
+                    </div>
+                </article>
+                <article class="card anim--3">
+                    <div class="card_text">
+                        <h3>Soupe à l'oignon</h3>
+                        <p>Revisitée</p>
+                    </div>
+                    <div class="card_price">
+                        <p>20€</p>
+                    </div>
+                    <div class="card_valid">
+                        <i class="fa-solid fa-circle-check" aria-hidden="true"></i>
+                    </div>
+                </article>
+            </div>
+            <div class="menu">
+                <h2>PLATS</h2>
+                <span class="title-bar"></span>
+                <article class="card anim--4">
+                    <div class="card_text">
+                        <h3>Coquilles Saint-Jacques</h3>
+                        <p>Accompagnées d'une purée de panais</p>
+                    </div>
+                    <div class="card_price">
+                        <p>40€</p>
+                    </div>
+                    <div class="card_valid">
+                        <i class="fa-solid fa-circle-check" aria-hidden="true"></i>
+                    </div>
+                </article>
+                <article class="card anim--5">
+                    <div class="card_text">
+                        <h3>Magret de canard</h3>
+                        <p>Et parmentier de pommes de terre</p>
+                    </div>
+                    <div class="card_price">
+                        <p>35€</p>
+                    </div>
+                    <div class="card_valid">
+                        <i class="fa-solid fa-circle-check" aria-hidden="true"></i>
+                    </div>
+                </article>
+                <article class="card anim--6">
+                    <div class="card_text">
+                        <h3>Pigeonneau d’Ille-et-Vilaine</h3>
+                        <p>Sur son lit de gnocchis aux légumes</p>
+                    </div>
+                    <div class="card_price">
+                        <p>44€</p>
+                    </div>
+                    <div class="card_valid">
+                        <i class="fa-solid fa-circle-check" aria-hidden="true"></i>
+                    </div>
+                </article>
+            </div>
+            <div class="menu">
+                <h2>DESSERTS</h2>
+                <span class="title-bar"></span>
+                <article class="card anim--7">
+                    <div class="card_text">
+                        <h3>Pétales de violettes glacés</h3>
+                        <p>Et purée de noisettes</p>
+                    </div>
+                    <div class="card_price">
+                        <p>18€</p>
+                    </div>
+                    <div class="card_valid">
+                        <i class="fa-solid fa-circle-check" aria-hidden="true"></i>
+                    </div>
+                </article>
+                <article class="card anim--8">
+                    <div class="card_text">
+                        <h3>Fondant au chocolat</h3>
+                        <p>Revisité</p>
+                    </div>
+                    <div class="card_price">
+                        <p>22€</p>
+                    </div>
+                    <div class="card_valid">
+                        <i class="fa-solid fa-circle-check" aria-hidden="true"></i>
+                    </div>
+                </article>
+                <article class="card anim--9">
+                    <div class="card_text">
+                        <h3>Millefeuille croustillant</h3>
+                        <p>Myrtilles et pâte d’amande</p>
+                    </div>
+                    <div class="card_price">
+                        <p>23€</p>
+                    </div>
+                    <div class="card_valid">
+                        <i class="fa-solid fa-circle-check" aria-hidden="true"></i>
+                    </div>
+                </article>
+            </div>
+            <button class="btn">Commander</button>
+        </section>
+    </main>
+    <footer>
+        <p class="footer_logo">ohmyfood</p>
+        <div class="footer_container">
+            <div class="icon-text">
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="13" viewBox="0 0 12 13" fill="none">
+                    <path d="M5.99736 0.385973C6.01851 0.505308 6.42308 2.78538 6.42308 3.65628C6.42308 4.9842 5.68798 5.93127 4.6012 6.31213L4.94231 12.3576C4.96082 12.7055 4.6726 13 4.30769 13H2.61538C2.25313 13 1.96226 12.708 1.98077 12.3576L2.32188 6.31213C1.23245 5.93127 0.5 4.98166 0.5 3.65628C0.5 2.78284 0.904567 0.505308 0.925721 0.385973C1.01034 -0.129456 2.12356 -0.137073 2.19231 0.413902V3.99905C2.22668 4.08538 2.59159 4.0803 2.61538 3.99905C2.6524 3.35667 2.82428 0.464683 2.82692 0.398668C2.91418 -0.129456 4.00889 -0.129456 4.09351 0.398668C4.0988 0.467223 4.26803 3.35667 4.30505 3.99905C4.32885 4.0803 4.69639 4.08538 4.72813 3.99905V0.413902C4.79688 -0.134534 5.91274 -0.129456 5.99736 0.385973ZM9.14928 7.64005L8.75264 12.3398C8.72091 12.6953 9.01442 13 9.38462 13H10.8654C11.2171 13 11.5 12.7283 11.5 12.3906V0.60941C11.5 0.274254 11.2171 3.62896e-05 10.8654 3.62896e-05C8.68389 3.62896e-05 5.01106 4.53225 9.14928 7.64005Z" fill="white"></path>
+                </svg>
+                <a href="#">Proposer un restaurant</a>
+            </div>
+            <div class="icon-text">
+                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13" fill="none">
+                    <path d="M9.58765 4.87486H6.7572V6.29686C6.7572 7.30495 6.15573 8.12514 5.41646 8.12514C4.6772 8.12514 4.07573 7.30495 4.07573 6.29686V3.2091L2.8672 4.19941C2.50781 4.49143 2.28808 5.02214 2.28808 5.59094V6.79202L0.798367 7.96516C0.51346 8.18862 0.414766 8.68632 0.580497 9.07483L2.07021 12.5943C2.23407 12.9828 2.59905 13.1148 2.88396 12.8914L4.80941 11.3754H7.35309C8.01042 11.3754 8.54485 10.6466 8.54485 9.75027H8.8428C9.17239 9.75027 9.43868 9.38716 9.43868 8.93771V7.31257H9.58765C9.83531 7.31257 10.0346 7.04087 10.0346 6.70314V5.48429C10.0346 5.14656 9.83531 4.87486 9.58765 4.87486ZM12.338 3.92517L10.8483 0.405735C10.6844 0.0172256 10.3195 -0.114817 10.0346 0.10864L8.10911 1.62459H6.20601C5.98255 1.62459 5.76468 1.71092 5.57475 1.8709L4.95093 2.40161C4.77589 2.54888 4.67161 2.81043 4.67161 3.08975V6.29686C4.67161 6.85804 5.00493 7.31257 5.41646 7.31257C5.828 7.31257 6.16132 6.85804 6.16132 6.29686V4.06229H9.58765C10.1631 4.06229 10.6304 4.69965 10.6304 5.48429V6.20798L12.1202 5.03484C12.4051 4.80884 12.5019 4.31368 12.338 3.92517Z" fill="white"></path>
+                </svg>
+                <a href="#">Devenir partenaire</a>
+            </div>
+            <a href="#">Mentions légales</a>
+            <a href="mailto:contact@ohmyfood.fr">Contact</a>
+        </div>
+    </footer> 
 
 </body>
+
 </html>
