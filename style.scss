@@ -509,6 +509,7 @@ footer a{
     animation-duration: 600ms;
     animation-fill-mode: forwards;
 }
+
 .card_text{
     display: flex;
     flex-direction: column;
@@ -562,6 +563,9 @@ p{
 }
 .card_valid i{
     margin-left: 18.5px;
+}
+.card:hover > .card_valid{
+    width: 59px;
 }
 .anim--2 {
     animation-delay: 400ms;
