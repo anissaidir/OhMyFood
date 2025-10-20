@@ -353,6 +353,10 @@ h2 {
   left: 0px;
 }
 
+.fa-regular {
+  font-weight: 400;
+}
+
 .fa-heart {
   cursor: pointer;
   transition: color 0.3s ease, transform 0.3s ease;
@@ -361,10 +365,6 @@ h2 {
 .fa-regular:hover {
   color: #9356DC;
   transform: scale(1.2);
-}
-
-.fa-regular {
-  font-weight: 400;
 }
 
 .heart-bloc .heart-gradient {
