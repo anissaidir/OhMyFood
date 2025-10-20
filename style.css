@@ -495,7 +495,6 @@ footer a {
   padding: 0px;
   font-family: Shrikhand;
   font-size: 28px;
-  font-weight: 400;
 }
 
 .heart-bloc {
@@ -740,7 +739,6 @@ footer .footer_container .icon-text {
     padding-top: 30px;
     padding-bottom: 30px;
     width: auto;
-    margin: 10px;
   }
   .restaurant .rest-container {
     flex-direction: row;
