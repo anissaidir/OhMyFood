@@ -7,7 +7,7 @@
 
 /*=====mobile device======*/
 h1 {
-  font-family: "roboto" sans-serif;
+  font-family: "roboto", sans-serif;
   font-size: 24px;
   color: black;
   font-weight: 700;
@@ -762,6 +762,7 @@ footer .footer_container .icon-text {
     flex-direction: row;
     gap: 20px;
   }
+  /*Les restaurants*/
   .top-bar {
     height: 96px;
   }
