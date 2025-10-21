@@ -189,6 +189,10 @@ h1 {
   cursor: pointer;
 }
 
+.btn:hover::after {
+  opacity: 1;
+}
+
 .btn::after {
   content: "";
   border-radius: 25px;
@@ -202,10 +206,6 @@ h1 {
   opacity: 0;
   z-index: -1;
   transition: opacity 300ms;
-}
-
-.btn:hover::after {
-  opacity: 1;
 }
 
 /*=================Section Fonctionnement===========*/
