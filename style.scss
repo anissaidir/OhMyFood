@@ -672,6 +672,7 @@ footer .footer_container .icon-text{
     .content{
         max-width: 1080px;
         margin: 10px;
+
     }
     h2{
         font-family: "Roboto", sans-serif;
@@ -690,6 +691,9 @@ footer .footer_container .icon-text{
         width: auto;
     
     }
+    .restaurant .rest-container_link{
+        width: 45%;
+    }
     
     .restaurant .rest-container{
         flex-direction: row;
@@ -699,9 +703,7 @@ footer .footer_container .icon-text{
         row-gap: 50px;
         column-gap: 100px;
     }
-    .restaurant .rest-container_link{
-        width: 45%;
-    }
+    
     footer{
         padding: 60px 60px 30px 25px;
         flex-direction: row-reverse;

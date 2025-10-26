@@ -740,6 +740,9 @@ footer .footer_container .icon-text {
     padding-bottom: 30px;
     width: auto;
   }
+  .restaurant .rest-container_link {
+    width: 45%;
+  }
   .restaurant .rest-container {
     flex-direction: row;
     align-items: center;
@@ -748,9 +751,6 @@ footer .footer_container .icon-text {
     row-gap: 50px;
     -moz-column-gap: 100px;
          column-gap: 100px;
-  }
-  .restaurant .rest-container_link {
-    width: 45%;
   }
   footer {
     padding: 60px 60px 30px 25px;
