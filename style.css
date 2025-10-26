@@ -723,7 +723,7 @@ footer .footer_container .icon-text {
   }
   .content {
     max-width: 1080px;
-    margin: auto;
+    margin: 10px;
   }
   h2 {
     font-family: "Roboto", sans-serif;
